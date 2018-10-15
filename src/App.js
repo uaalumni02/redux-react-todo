@@ -27,7 +27,6 @@ handleChange(event) {
   this.setState({ inputValue });
 }
   render() {
-    this.props.logSomething();
     return (
       <div className="App">
         <header className="App-header">
@@ -54,7 +53,6 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     addTodo: (task) => dispatch({ type: "ADD_ITEM", task }),
-    logSomething: () => console.log("Something")
   }
 }
 
